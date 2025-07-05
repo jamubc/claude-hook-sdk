@@ -1,0 +1,46 @@
+{
+  "name": "claude-hook-sdk",
+  "version": "1.0.0",
+  "description": "TypeScript SDK for building Claude Code hooks",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "deterministic-router": "./dist/hooks/deterministic-router.js",
+    "claude-hook": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "claude",
+    "hooks",
+    "sdk",
+    "typescript",
+    "claude-code"
+  ],
+  "author": "Andrew Manson",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@vitest/coverage-v8": "^2.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamubc/claude-hook-sdk.git"
+  }
+}
